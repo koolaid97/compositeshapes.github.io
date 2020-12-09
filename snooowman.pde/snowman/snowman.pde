@@ -12,21 +12,21 @@ if(width> height); shortSide = height;
 println(shortSide);
 //
 //Populating Variables
-squareX = width;
-squareY = height;
-squareSide= width;
-topX = width*1/2;
-topY = height*1/2;
-topDiameter = width*1/2;
-middleX = width*1/4;
-middleY= height*1/4;
-middleDiameter = width*1/4;
-botX = width*1/2;
-botY = height*1/2;
-botDiameter = width*1/2;
-snoX = width;
-snoY = height;
-snoDiameter = width;
+squareX = width*1/4;
+squareY = height*0;
+squareSide= height;
+topX = width*1/4+height*1/2;
+topY = height*1/4+height*1/2;
+topDiameter = width*1/4;
+middleX = width*1/2.9+height*1/3;
+middleY= height*1/6+height*1/3;
+middleDiameter = width*1/6;
+botX = width*1/2.55+height*1/4;
+botY = height*1/11+height*1/4;
+botDiameter = width*1/8;
+snoX = width*1/5+height*1/5;
+snoY = height*1/12+height*1/5;
+snoDiameter = width*1/20;
 //
 //Snowman
 //top circle
