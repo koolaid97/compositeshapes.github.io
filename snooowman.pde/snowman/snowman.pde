@@ -5,6 +5,8 @@ float topX, topY, topDiameter;
 float middleX, middleY, middleDiameter;
 float botX, botY, botDiameter;
 float snoX, snoY, snoDiameter;
+color snowcolor=#36C1FF;
+
 //
 //Display Geometry
 fullScreen(); //displayWidth & displayHeight
@@ -24,9 +26,7 @@ middleDiameter = width*1/6;
 botX = width*1/2.55+height*1/4;
 botY = height*1/11+height*1/4;
 botDiameter = width*1/8;
-snoX = width*1/5+height*1/5;
-snoY = height*1/12+height*1/5;
-snoDiameter = width*1/20;
+
 //
 //Snowman
 //top circle
@@ -38,5 +38,9 @@ ellipse(middleX, middleY, middleDiameter, middleDiameter);
 ellipse(botX, botY, botDiameter, botDiameter);
 //
 //The snow falling
+snoX = random(width);
+snoY = random(height);
+snoDiameter = random(width*1/20);
+fill(snowcolor);
 ellipse(snoX, snoY, snoDiameter, snoDiameter);
 //
