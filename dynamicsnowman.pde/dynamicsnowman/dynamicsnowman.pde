@@ -19,7 +19,7 @@ populatingVariables();
 }
 
 void draw() {
-  //The snow falling
+  //The snowball fighting
 snoX = random(width*1/3.5, width*4/5.3);
 snoY = random(height);
 snoDiameter = random(width*1/20, height*1/10);
