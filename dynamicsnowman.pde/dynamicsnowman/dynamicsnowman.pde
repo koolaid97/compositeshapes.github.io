@@ -1,4 +1,7 @@
 //Global Variables
+float tX, tY, Tside, TSIDE;
+String title = "snowman getting hit";
+PFont titleFont;
 int reset;
 int shortSide;
 float squareX, squareY, squareSide;
@@ -6,12 +9,16 @@ float topX, topY, topDiameter;
 float middleX, middleY, middleDiameter;
 float botX, botY, botDiameter;
 float snoX, snoY, snoDiameter;
-color snowcolor=#36C1FF, ccolor=#7EFF17, cccolor=#FF0331, ccccolor=#2C2C2C, cccccolor=#FCFCFC;
+color snowcolor=#36C1FF, ccolor=#7EFF17, cccolor=#FF0331, ccccolor=#2C2C2C, cccccolor=#FCFCFC, bolor=#FE00FF;
+float leftEyeX, leftEyeY, leftDiameter;
+float reftEyeX, reftEyeY, reftDiameter;
 
 void setup() {
   fullScreen(); //displayWidth & displayHeight
 if(width> height); shortSide = height;
 println(shortSide);
+
+
 //Populating Variables
 populatingVariables();
 
@@ -40,6 +47,12 @@ fill(reset);
 
 fill(ccccolor);
 ellipse(botX, botY, botDiameter, botDiameter);
+fill(reset);
+fill(bolor);
+ellipse(leftEyeX, leftEyeY, leftDiameter, leftDiameter);
+fill(reset);
+fill(bolor);
+ellipse(reftEyeX, reftEyeY, reftDiameter, reftDiameter);
 fill(reset);
 } // end draw ()
 
