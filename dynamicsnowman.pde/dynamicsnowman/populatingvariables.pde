@@ -21,6 +21,17 @@ tX = width*1/4;
 tY = height*0;
 Tside = width*3/5.5;
 TSIDE = height * 1/10;
+mouthX1 = width*1/2.8;
+mouthY1 = height*1/2;
+mouthX2 = width*1/2.2;
+mouthY2 = mouthY1;
+mouthThick = height*1/40;
+//
+mouthX11 = width*2/3.3;
+mouthY11 = height*1/2;
+mouthX22 = width*2/2.85;
+mouthY22 = mouthY11;
+mouthThick2 = height*1/40;
 
 //Snowman
 //top circle
@@ -33,4 +44,6 @@ ellipse(middleX, middleY, middleDiameter, middleDiameter);
 ellipse(botX, botY, botDiameter, botDiameter);
 ellipse(leftEyeX, leftEyeY, leftDiameter, leftDiameter);
 ellipse(reftEyeX, reftEyeY, reftDiameter, reftDiameter);
+line(mouthX1, mouthY1, mouthX2, mouthY2);
+line(mouthX11, mouthY11, mouthX22, mouthY22);
 } // end populating variables

@@ -12,7 +12,8 @@ float snoX, snoY, snoDiameter;
 color snowcolor=#36C1FF, ccolor=#7EFF17, cccolor=#FF0331, ccccolor=#2C2C2C, cccccolor=#FCFCFC, bolor=#FE00FF;
 float leftEyeX, leftEyeY, leftDiameter;
 float reftEyeX, reftEyeY, reftDiameter;
-
+float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
+float mouthX11, mouthY11, mouthX22, mouthY22, mouthThick2;
 void setup() {
   fullScreen(); //displayWidth & displayHeight
 if(width> height); shortSide = height;
@@ -54,6 +55,12 @@ fill(reset);
 fill(bolor);
 ellipse(reftEyeX, reftEyeY, reftDiameter, reftDiameter);
 fill(reset);
+strokeWeight(mouthThick);
+line(mouthX1, mouthY1, mouthX2, mouthY2);
+strokeWeight(reset);
+strokeWeight(mouthThick2);
+line(mouthX11, mouthY11, mouthX22, mouthY22);
+strokeWeight(reset);
 
 
 fill(bolor); //reset
