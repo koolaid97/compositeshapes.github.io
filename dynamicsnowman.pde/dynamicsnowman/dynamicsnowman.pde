@@ -54,6 +54,14 @@ fill(reset);
 fill(bolor);
 ellipse(reftEyeX, reftEyeY, reftDiameter, reftDiameter);
 fill(reset);
+
+
+fill(bolor); //reset
+titleFont = createFont ("Impact", 55);
+textFont(titleFont);
+text(title, tX, tY, Tside, TSIDE);
+textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+//Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
 } // end draw ()
 
 void keyPressed() {
