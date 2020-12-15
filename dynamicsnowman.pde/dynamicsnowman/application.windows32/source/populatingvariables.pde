@@ -32,9 +32,14 @@ mouthY11 = height*1/2;
 mouthX22 = width*2/2.85;
 mouthY22 = mouthY11;
 mouthThick2 = height*1/40;
+tXx = width*1/8;
+tYx = height*1/2;
+Tsidex = width*1/8.5;
+TSIDEx = height * 1/4;
 
 //Snowman
 //top circle
+rect(tXx, tYx, Tsidex, TSIDEx);
 rect(squareX, squareY, squareSide, squareSide);
 rect(tX, tY, Tside, TSIDE);
 ellipse(topX, topY, topDiameter, topDiameter);
